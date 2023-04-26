@@ -13,7 +13,7 @@
 
 - Ознакомиться с данными в папке `north_data`
 - Создать три таблицы, используя `query tool` в pgAdmin
-    - `employees`
+    - `CREATE DATABASE north`
     - `customers`
     - `orders`
 - Колонки для таблиц и связи между таблицами определить самостоятельно
