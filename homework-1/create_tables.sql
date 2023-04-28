@@ -20,7 +20,7 @@ CREATE TABLE employees_data
 CREATE TABLE orders_data
 (
 	order_id serial PRIMARY KEY,
-	customer_id varchar(20) NOT NULL,
+	customer_id varchar(20) REFERENCES customers_name(customer_id),
 	employee_id varchar(20) NOT NULL,
 	order_date date NOT NULL,
 	ship_city varchar(50) NOT NULL
