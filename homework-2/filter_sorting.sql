@@ -2,8 +2,7 @@
 -- 1. заказы, доставленные в страны France, Germany, Spain (таблица orders, колонка ship_country)
 SELECT *
 FROM orders
-WHERE ship_country = 'Germany 'France' OR  ship_country =' OR ship_country = 'Spain'
-"WHERE ship_country IN ('France', 'Germany', 'Spain') "
+WHERE ship_country IN ('France', 'Germany', 'Spain')
 -- 2. уникальные города и страны, куда отправлялись заказы, отсортировать по странам и городам (таблица orders, колонки ship_country, ship_city)
 SELECT DISTINCT ship_country, ship_city
 FROM orders
